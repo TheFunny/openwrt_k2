@@ -29,7 +29,7 @@
  WORKINGDIR="`pwd`/feeds/packages/net/chinadns-ng"
  mkdir $WORKINGDIR -p
  rm $WORKINGDIR/* -fr
- wget https://github.com/NagaseKouichi/openwrt-chinadns-ng-master/archive/master.zip -O $WORKINGDIR/master.zip
+ wget https://github.com/NagaseKouichi/openwrt-chinadns-ng/archive/master.zip -O $WORKINGDIR/master.zip
  unzip $WORKINGDIR/master.zip -d $WORKINGDIR
  mv $WORKINGDIR/openwrt-chinadns-ng-master/* $WORKINGDIR/
  rmdir $WORKINGDIR/openwrt-chinadns-ng
