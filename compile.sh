@@ -5,11 +5,11 @@
  tar -xvf openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64.tar
  cd openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64
  
- wget https://github.com/TheFunny/openwrt_k2/archive/refs/heads/master.zip -O ./package/openwrt_k2-master.zip
- unzip ./package/openwrt_k2-master.zip -d ./package/
- mv ./package/openwrt_k2-master/* ./package/
- rmdir /package/openwrt_k2-master
- rm ./package/master.zip
+ wget https://github.com/TheFunny/openwrt_k2/archive/refs/heads/master.zip -O ./packages/openwrt_k2-master.zip
+ unzip ./packages/openwrt_k2-master.zip -d ./packages/
+ mv ./packages/openwrt_k2-master/* ./package/
+ rmdir /packages/openwrt_k2-master
+ rm ./packages/master.zip
  
  WORKINGDIR="`pwd`/feeds/packages/net/smartdns"
  mkdir $WORKINGDIR -p
