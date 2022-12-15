@@ -5,11 +5,9 @@
  tar -xvf openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64.tar
  cd openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64
  
- git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
- make package/chinadns-ng/compile V=s
- 
- git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
- make package/luci-app-chinadns-ng/compile V=s
+ wget https://github.com/TheFunny/openwrt_k2/blob/master/chinadns-ng_1.0-beta.25-2_mips_24kc.ipk?raw=true -O ./package/
+ wget https://github.com/TheFunny/openwrt_k2/blob/master/luci-app-chinadns-ng_1.2-1_all.ipk?raw=true -O ./package/
+ wget https://github.com/TheFunny/openwrt_k2/blob/master/luci-i18n-chinadns-ng-zh-cn_1.2-1_all.ipk?raw=true -O ./package/
  
  WORKINGDIR="`pwd`/feeds/packages/net/smartdns"
  mkdir $WORKINGDIR -p
