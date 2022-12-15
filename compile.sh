@@ -5,8 +5,8 @@
  tar -xvf openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64.tar
  cd openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64
  
- wget https://github.com/TheFunny/openwrt_k2/archive/refs/heads/master.zip -O ./package/master.zip
- unzip ./package/master.zip -d ./package/
+ wget https://github.com/TheFunny/openwrt_k2/archive/refs/heads/master.zip -O ./package/openwrt_k2-master.zip
+ unzip ./package/openwrt_k2-master.zip -d ./package/
  mv ./package/openwrt_k2-master/* ./package/
  rmdir /package/openwrt_k2-master
  rm ./package/master.zip
