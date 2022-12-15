@@ -8,7 +8,7 @@
  wget https://github.com/TheFunny/openwrt_k2/archive/refs/heads/master.zip -O ./packages/master.zip
  unzip ./packages/master.zip -d ./packages/
  mv ./packages/openwrt_k2-master/* ./packages/
- rmdir /packages/openwrt_k2-master
+ rmdir ./packages/openwrt_k2-master
  rm ./packages/master.zip
 
  make info
